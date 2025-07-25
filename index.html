@@ -1,144 +1,844 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Nederlandse Woorden en Zinnen - Studieoverzicht</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    h2 {
-      color: #0077aa;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    details {
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      padding: 10px 15px;
-      margin: 10px 0;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .translation {
-      color: #555;
-      font-style: italic;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestructureerd Nederlands Studieoverzicht (Bijgewerkt)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+        }
+        th, td {
+            border: 1px solid #e2e8f0; /* Tailwind gray-200 */
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #e0f2fe; /* Light blue, similar to blue-100 */
+            font-weight: 600;
+            color: #2563eb; /* Tailwind blue-600 */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc; /* Tailwind gray-50 */
+        }
+        strong {
+            font-weight: 600;
+        }
+        .section-title {
+            color: #1d4ed8; /* Tailwind blue-700 */
+            border-bottom: 2px solid #bfdbfe; /* Tailwind blue-200 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .subsection-title {
+            color: #3b82f6; /* Tailwind blue-600 */
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .list-item-strong {
+            color: #007bff; /* A distinct blue for emphasized words */
+        }
+        .list-disc li {
+            padding-left: 0.5rem; /* Indent for list items */
+        }
+        details {
+            margin-bottom: 1rem;
+            background-color: #f0f9ff; /* Light blue background for details */
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        summary {
+            font-weight: 600;
+            padding: 1rem;
+            cursor: pointer;
+            color: #1e40af; /* Darker blue for summary text */
+            list-style: none; /* Remove default arrow */
+            position: relative;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Hide default arrow for Webkit browsers */
+        }
+        summary::before {
+            content: '▶'; /* Custom arrow */
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.2s;
+        }
+        details[open] summary::before {
+            transform: translateY(-50%) rotate(90deg); /* Rotate arrow when open */
+        }
+        details > div {
+            padding: 0.5rem 1rem 1rem 2rem; /* Indent content */
+            border-top: 1px solid #e0f2fe;
+        }
+    </style>
 </head>
-<body>
-  <h1>Nederlandse Woorden en Zinnen – Studieoverzicht</h1>
+<body class="bg-blue-50 text-gray-800">
 
-  <h2>15 juli - Thema's & Woordenschat</h2>
+    <header class="bg-white shadow-md py-6">
+        <div class="container text-center">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-800">Gestructureerd Nederlands Studieoverzicht</h1>
+            <p class="text-gray-600 mt-2">Visueel overzicht van je notities voor efficiënt studeren</p>
+        </div>
+    </header>
 
-  <details open>
-    <summary>📌 Beschrijvingen van Uiterlijk & Karakter</summary>
-    <ul>
-      <li>Opvallend – <span class="translation">Striking / Conspicuous</span></li>
-      <li>Dunner worden? – <span class="translation">To become thinner?</span></li>
-      <li>Afvalpillen – <span class="translation">Diet pills</span></li>
-      <li>Het beeld van de afvalpillen. – <span class="translation">The image of the diet pills.</span></li>
-      <li>Knap – <span class="translation">Handsome / Beautiful</span></li>
-      <li>Naïef – <span class="translation">Naive</span></li>
-      <li>Bescheiden – <span class="translation">Modest</span></li>
-      <li>Haar kleding is kleurrijk. – <span class="translation">Her clothing is colorful.</span></li>
-      <li>Ze vindt zichzelf. – <span class="translation">She finds herself.</span></li>
-      <li>Ze voelt zichzelf onbegrepen. – <span class="translation">She feels misunderstood.</span></li>
-      <li>Onzichtbaar – <span class="translation">Invisible</span></li>
-      <li>Onzeker – <span class="translation">Insecure / Uncertain</span></li>
-    </ul>
-  </details>
+    <main class="container my-8 p-6 bg-white rounded-lg shadow-xl">
 
-  <details>
-    <summary>💔 Relaties & Gevoelens</summary>
-    <ul>
-      <li>En haar man slaapt ook met anderen. – <span class="translation">And her husband also sleeps with others.</span></li>
-      <li>En toen was Cheryl… – <span class="translation">And then Cheryl was…</span></li>
-      <li>Ze voelt zich meestal eenzaam. – <span class="translation">She usually feels lonely.</span></li>
-      <li>Verlangen – <span class="translation">To long for</span></li>
-      <li>Liefdevolle relatie – <span class="translation">Loving relationship</span></li>
-      <li>Een partner die haar ziet staan. – <span class="translation">A partner who appreciates her / sees her for who she is.</span></li>
-      <li>Met een drang naar controle over haar leven. – <span class="translation">With a strong urge for control over her life.</span></li>
-      <li>Geen knuffels. – <span class="translation">No hugs.</span></li>
-      <li>Afstandelijk. – <span class="translation">Distant / Reserved.</span></li>
-      <li>Ze wil er graag bij horen (bij 'mensen' of bij haar vriendinnen). – <span class="translation">She really wants to belong / fit in.</span></li>
-    </ul>
-  </details>
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold section-title">1. Woordenschat (Vocabulary)</h2>
 
-  <details>
-    <summary>🕊️ Dood & Verlies</summary>
-    <ul>
-      <li>Weduwe – <span class="translation">Widow</span></li>
-      <li>Vermoord – <span class="translation">Murdered</span></li>
-      <li>Overleed / Stierf – <span class="translation">Died – ‘stierf’ is the past tense of ‘sterven’</span></li>
-      <li>Haar man overleed. – <span class="translation">Her husband passed away.</span></li>
-      <li>En ze liet geen traan. – <span class="translation">And she shed no tear.</span></li>
-    </ul>
-  </details>
+            <h3 class="text-xl font-semibold subsection-title">1.1 De-woorden (Common Nouns)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">de</strong> herstel (recovery)</li>
+                <li><strong class="list-item-strong">de</strong> overstroming (flood)</li>
+                <li><strong class="list-item-strong">de</strong> regenbui (rain shower)</li>
+                <li><strong class="list-item-strong">de</strong> expert (expert)</li>
+                <li><strong class="list-item-strong">de</strong> overheid (government)</li>
+                <li><strong class="list-item-strong">de</strong> overstap (transfer/layover)</li>
+                <li><strong class="list-item-strong">de</strong> keuken (cuisine)</li>
+                <li><strong class="list-item-strong">de</strong> worsten (sausages)</li>
+                <li><strong class="list-item-strong">de</strong> dreiging (threat)</li>
+                <li><strong class="list-item-strong">de</strong> waarheid (truth)</li>
+                <li><strong class="list-item-strong">de</strong> wet (law)</li>
+                <li><strong class="list-item-strong">de</strong> politie (police)</li>
+                <li><strong class="list-item-strong">de</strong> kritiek (criticism)</li>
+                <li><strong class="list-item-strong">de</strong> man (man)</li>
+                <li><strong class="list-item-strong">de</strong> spieren (muscles)</li>
+                <li><strong class="list-item-strong">de</strong> ruggengraat (spine)</li>
+                <li><strong class="list-item-strong">de</strong> beurt (turn)</li>
+                <li><strong class="list-item-strong">de</strong> walvis (whale)</li>
+                <li><strong class="list-item-strong">de</strong> vinnen (fins)</li>
+                <li><strong class="list-item-strong">de</strong> staart (tail)</li>
+                <li><strong class="list-item-strong">de</strong> apotheker (pharmacist)</li>
+                <li><strong class="list-item-strong">de</strong> slagerij (butcher shop)</li>
+                <li><strong class="list-item-strong">de</strong> wasmachine (washing machine)</li>
+                <li><strong class="list-item-strong">de</strong> peetmoeder (godmother)</li>
+                <li><strong class="list-item-strong">de</strong> basisschool (primary school)</li>
+                <li><strong class="list-item-strong">de</strong> toets (test)</li>
+                <li><strong class="list-item-strong">de</strong> halte (stop)</li>
+                <li><strong class="list-item-strong">de</strong> mevrouw (madam/lady)</li>
+                <li><strong class="list-item-strong">de</strong> trein (train)</li>
+                <li><strong class="list-item-strong">de</strong> taakverdeling (division of tasks)</li>
+                <li><strong class="list-item-strong">de</strong> ongesteldheid (menstruation)</li>
+                <li><strong class="list-item-strong">de</strong> middelbare school (secondary school)</li>
+                <li><strong class="list-item-strong">de</strong> opleiding (education/training)</li>
+                <li><strong class="list-item-strong">de</strong> universiteit (university)</li>
+                <li><strong class="list-item-strong">de</strong> trouwerij (wedding)</li>
+                <li><strong class="list-item-strong">de</strong> hardloopwedstrijd (running competition)</li>
+                <li><strong class="list-item-strong">de</strong> waterpistolen (water guns)</li>
+                <li><strong class="list-item-strong">de</strong> rolschaatsen (roller skates)</li>
+                <li><strong class="list-item-strong">de</strong> koorts (fever)</li>
+                <li><strong class="list-item-strong">de</strong> diarree (diarrhea)</li>
+                <li><strong class="list-item-strong">de</strong> dienstregeling (schedule)</li>
+                <li><strong class="list-item-strong">de</strong> huisbaas (landlord)</li>
+                <li><strong class="list-item-strong">de</strong> gewoonte (habit)</li>
+                <li><strong class="list-item-strong">de</strong> kennis (knowledge)</li>
+                <li><strong class="list-item-strong">de</strong> vriendschap (friendship)</li>
+                <li><strong class="list-item-strong">de</strong> conditie (condition/fitness)</li>
+                <li><strong class="list-item-strong">de</strong> filosofie (philosophy)</li>
+                <li><strong class="list-item-strong">de</strong> organisatie (organization)</li>
+                <li><strong class="list-item-strong">de</strong> lamellen (blinds)</li>
+                <li><strong class="list-item-strong">de</strong> gordijn (curtain)</li>
+                <li><strong class="list-item-strong">de</strong> kaars (candle)</li>
+                <li><strong class="list-item-strong">de</strong> oplader (charger)</li>
+                <li><strong class="list-item-strong">de</strong> bikini (bikini)</li>
+                <li><strong class="list-item-strong">de</strong> windkracht (wind force)</li>
+                <li><strong class="list-item-strong">de</strong> bliksem (lightning)</li>
+                <li><strong class="list-item-strong">de</strong> wolken (clouds)</li>
+                <li><strong class="list-item-strong">de</strong> injectie (injection)</li>
+                <li><strong class="list-item-strong">de</strong> operatie (operation)</li>
+                <li><strong class="list-item-strong">de</strong> oplossing (solution)</li>
+                <li><strong class="list-item-strong">de</strong> textuur (texture)</li>
+                <li><strong class="list-item-strong">de</strong> rij (queue)</li>
+                <li><strong class="list-item-strong">de</strong> meneer (mister/gentleman)</li>
+                <li><strong class="list-item-strong">de</strong> steegjes (alleys)</li>
+                <li><strong class="list-item-strong">de</strong> motor (motorcycle/engine)</li>
+                <li><strong class="list-item-strong">de</strong> winkels (shops)</li>
+                <li><strong class="list-item-strong">de</strong> uitdrukking (expression)</li>
+                <li><strong class="list-item-strong">de</strong> verbinding (connection)</li>
+                <li><strong class="list-item-strong">de</strong> sfeer (atmosphere)</li>
+                <li><strong class="list-item-strong">de</strong> situatie (situation)</li>
+                <li><strong class="list-item-strong">de</strong> broek (pants)</li>
+                <li><strong class="list-item-strong">de</strong> korting (discount)</li>
+                <li><strong class="list-item-strong">de</strong> heupen (hips)</li>
+                <li><strong class="list-item-strong">de</strong> middel (waist)</li>
+                <li><strong class="list-item-strong">de</strong> maat (size)</li>
+                <li><strong class="list-item-strong">de</strong> weerexperts (weather experts)</li>
+                <li><strong class="list-item-strong">de</strong> mugjes / muggen (small midges / mosquitoes)</li>
+                <li><strong class="list-item-strong">de</strong> muggenbulten (mosquito bites)</li>
+                <li><strong class="list-item-strong">de</strong> wandeling (walk/hike)</li>
+                <li><strong class="list-item-strong">de</strong> rotsen (rocks)</li>
+                <li><strong class="list-item-strong">de</strong> hooglanden (Highlands)</li>
+                <li><strong class="list-item-strong">de</strong> waterdichte schoenen (waterproof shoes)</li>
+                <li><strong class="list-item-strong">de</strong> schapenorganen (sheep organs)</li>
+                <li><strong class="list-item-strong">de</strong> hart (heart)</li>
+                <li><strong class="list-item-strong">de</strong> lever (liver)</li>
+                <li><strong class="list-item-strong">de</strong> longen (lungs)</li>
+                <li><strong class="list-item-strong">de</strong> maag (stomach)</li>
+                <li><strong class="list-item-strong">de</strong> Schotse taarten (Scottish pies)</li>
+                <li><strong class="list-item-strong">de</strong> aanbieding (offer/deal)</li>
+                <li><strong class="list-item-strong">de</strong> landwegen (country roads)</li>
+                <li><strong class="list-item-strong">de</strong> vrachtwagens (trucks)</li>
+                <li><strong class="list-item-strong">de</strong> kastelen (castles)</li>
+                <li><strong class="list-item-strong">de</strong> weduwe (widow)</li>
+                <li><strong class="list-item-strong">de</strong> woedeaanval (fit of rage)</li>
+                <li><strong class="list-item-strong">de</strong> laatje (drawer)</li>
+            </ul>
 
-  <details>
-    <summary>🏠 Dagelijks Leven & Gewoontes</summary>
-    <ul>
-      <li>Vandaag ben ik naar de gym geweest. – <span class="translation">Today I went to the gym.</span></li>
-      <li>Als we nu nog twintig waren geweest, dan… – <span class="translation">If we were still twenty, then...</span></li>
-      <li>Met niemand gepraat. – <span class="translation">Didn't talk to anyone.</span></li>
-      <li>Nog niet aan denken. – <span class="translation">Don't think about it yet.</span></li>
-      <li>Voorbereiden – <span class="translation">To prepare</span></li>
-      <li>Ze bereidt het ontbijt voor haar familie tot in perfectie elke ochtend voor. – <span class="translation">She prepares breakfast for her family to perfection every morning.</span></li>
-      <li>Groot feest gegeven. – <span class="translation">Gave a big party.</span></li>
-      <li>Na de verhuizing. – <span class="translation">After the move.</span></li>
-      <li>Gegeven aan haar. – <span class="translation">Given to her.</span></li>
-    </ul>
-  </details>
+            <h3 class="text-xl font-semibold subsection-title">1.2 Het-woorden (Neuter Nouns)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">het</strong> herstel (recovery)</li>
+                <li><strong class="list-item-strong">het</strong> visum (visa)</li>
+                <li><strong class="list-item-strong">het</strong> paspoort (passport)</li>
+                <li><strong class="list-item-strong">het</strong> vliegtuig (airplane)</li>
+                <li><strong class="list-item-strong">het</strong> ding (thing)</li>
+                <li><strong class="list-item-strong">het</strong> huis (house)</li>
+                <li><strong class="list-item-strong">het</strong> leger (army)</li>
+                <li><strong class="list-item-strong">het</strong> appartement (apartment)</li>
+                <li><strong class="list-item-strong">het</strong> probleem (problem)</li>
+                <li><strong class="list-item-strong">het</strong> huiswerk (homework)</li>
+                <li><strong class="list-item-strong">het</strong> examen (exam)</li>
+                <li><strong class="list-item-strong">het</strong> horloge (watch)</li>
+                <li><strong class="list-item-strong">het</strong> station (station)</li>
+                <li><strong class="list-item-strong">het</strong> kunstwerk (artwork)</li>
+                <li><strong class="list-item-strong">het</strong> schilderij (painting)</li>
+                <li><strong class="list-item-strong">het</strong> tekening (drawing)</li>
+                <li><strong class="list-item-strong">het</strong> gemeentehuis (town hall)</li>
+                <li><strong class="list-item-strong">het</strong> waterijs (popsicle)</li>
+                <li><strong class="list-item-strong">het</strong> thuis (home)</li>
+                <li><strong class="list-item-strong">het</strong> onweer (thunderstorm)</li>
+                <li><strong class="list-item-strong">het</strong> spoor (track/rail)</li>
+                <li><strong class="list-item-strong">het</strong> gebouw (building)</li>
+                <li><strong class="list-item-strong">het</strong> geluid (sound)</li>
+                <li><strong class="list-item-strong">het</strong> toerisme (tourism)</li>
+                <li><strong class="list-item-strong">het</strong> arrangement (arrangement)</li>
+                <li><strong class="list-item-strong">het</strong> stelsel (system)</li>
+                <li><strong class="list-item-strong">het</strong> museum (museum)</li>
+                <li><strong class="list-item-strong">het</strong> strand (beach)</li>
+                <li><strong class="list-item-strong">het</strong> identiteitsbewijs (ID)</li>
+                <li><strong class="list-item-strong">het</strong> huurhuis (rental house)</li>
+                <li><strong class="list-item-strong">het</strong> klushuis (fixer-upper house)</li>
+                <li><strong class="list-item-strong">het</strong> zandstrand (sandy beach)</li>
+                <li><strong class="list-item-strong">het</strong> stenen strand (rocky beach)</li>
+                <li><strong class="list-item-strong">het</strong> water (water)</li>
+                <li><strong class="list-item-strong">het</strong> klimaat (climate)</li>
+                <li><strong class="list-item-strong">het</strong> haar (hair)</li>
+                <li><strong class="list-item-strong">het</strong> verlies (loss)</li>
+                <li><strong class="list-item-strong">het</strong> spoedgeval (emergency)</li>
+                <li><strong class="list-item-strong">het</strong> spreekuur (consultation hour)</li>
+                <li><strong class="list-item-strong">het</strong> weer (weather)</li>
+                <li><strong class="list-item-strong">het</strong> miezerregen (drizzle)</li>
+                <li><strong class="list-item-strong">het</strong> vet (grease/fat)</li>
+                <li><strong class="list-item-strong">het</strong> huwelijk (marriage)</li>
+                <li><strong class="list-item-strong">het</strong> beeld (image)</li>
+                <li><strong class="list-item-strong">het</strong> verlangen (longing)</li>
+                <li><strong class="list-item-strong">het</strong> knuffels (hugs)</li>
+                <li><strong class="list-item-strong">het</strong> feest (party)</li>
+                <li><strong class="list-item-strong">het</strong> ontbijt (breakfast)</li>
+            </ul>
 
-  <details>
-    <summary>🛒 Producten & Winkels</summary>
-    <ul>
-      <li>Wat is niet te koop in Nederlandse supermarkten? – <span class="translation">What is not for sale in Dutch supermarkets?</span></li>
-      <li>Arabische winkels. – <span class="translation">Arab shops.</span></li>
-      <li>Op het einde van de straat. – <span class="translation">At the end of the street.</span></li>
-      <li>Dezelfde producten. – <span class="translation">The same products.</span></li>
-      <li>Het eten is hetzelfde. – <span class="translation">The food is the same.</span></li>
-      <li>Gevulde paprika's, gevulde… – <span class="translation">Stuffed bell peppers, stuffed...</span></li>
-      <li>Zij koopt dure kleding om te compenseren. – <span class="translation">She buys expensive clothes to compensate.</span></li>
-    </ul>
-  </details>
+            <h3 class="text-xl font-semibold subsection-title">1.3 Bijvoeglijke naamwoorden & Bijwoorden (Adjectives & Adverbs)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong>verdwaald</strong> (lost - past participle of verb, used as adj)</li>
+                <li><strong>omgekomen</strong> (perished - past participle of verb, used as adj)</li>
+                <li><strong>dakloos</strong> (homeless)</li>
+                <li><strong>vermist</strong> (missing)</li>
+                <li><strong>stormachtig</strong> (stormy)</li>
+                <li><strong>overeenkomstig</strong> (similar)</li>
+                <li><strong>hetzelfde</strong> (the same)</li>
+                <li><strong>gelijk</strong> (equal/similar)</li>
+                <li><strong>verdeeld</strong> (divided)</li>
+                <li><strong>enig</strong> (only)</li>
+                <li><strong>beste</strong> (best)</li>
+                <li><strong>slechtste</strong> (worst)</li>
+                <li><strong>overduidelijk</strong> (obvious)</li>
+                <li><strong>strenger</strong> (more strict)</li>
+                <li><strong>duur</strong> (expensive)</li>
+                <li><strong>handig</strong> (handy)</li>
+                <li><strong>praktisch</strong> (practical)</li>
+                <li><strong>zelfverzekerd</strong> (confident)</li>
+                <li><strong>bijzonder</strong> (special)</li>
+                <li><strong>ontroerend</strong> (touching)</li>
+                <li><strong>verdrietig</strong> (sad)</li>
+                <li><strong>blij</strong> (happy)</li>
+                <li><strong>bezorgd</strong> (worried)</li>
+                <li><strong>middelmatig</strong> (mediocre)</li>
+                <li><strong>vreedzaam</strong> (peaceful)</li>
+                <li><strong>indrukwekkend</strong> (impressive)</li>
+                <li><strong>zelden</strong> (rarely)</li>
+                <li><strong>misselijk</strong> (nauseous)</li>
+                <li><strong>verlegen</strong> (shy)</li>
+                <li><strong>besmettelijk</strong> (contagious)</li>
+                <li><strong>verloren</strong> (lost)</li>
+                <li><strong>kwijt</strong> (lost)</li>
+                <li><strong>ontspannend</strong> (relaxing)</li>
+                <li><strong>zonnig</strong> (sunny)</li>
+                <li><strong>bewolkt</strong> (cloudy)</li>
+                <li><strong>nat</strong> (wet)</li>
+                <li><strong>afwisselend</strong> (alternating/varied)</li>
+                <li><strong>tropisch</strong> (tropical)</li>
+                <li><strong>benauwd</strong> (stuffy/oppressive)</li>
+                <li><strong>nauwe</strong> (narrow)</li>
+                <li><strong>snel</strong> (fast)</li>
+                <li><strong>netjes</strong> (neat/tidy)</li>
+                <li><strong>glad</strong> (slippery)</li>
+                <li><strong>erg</strong> (very)</li>
+                <li><strong>erger</strong> (worse)</li>
+                <li><strong>teleurgesteld</strong> (disappointed)</li>
+                <li><strong>idyllisch</strong> (idyllic)</li>
+                <li><strong>sfeerloos</strong> (lacking atmosphere)</li>
+                <li><strong>afgelopen</strong> (last/past)</li>
+                <li><strong>streng</strong> (strict)</li>
+                <li><strong>hevig</strong> (heavy/severe)</li>
+                <li><strong>eerder</strong> (earlier)</li>
+                <li><strong>later</strong> (later)</li>
+                <li><strong>vroeger</strong> (in the past/earlier)</li>
+                <li><strong>plotseling</strong> (sudden)</li>
+                <li><strong>onverwachts</strong> (unexpected)</li>
+                <li><strong>vermoeiend</strong> (tiring)</li>
+                <li><strong>knus</strong> (cozy)</li>
+                <li><strong>pittig</strong> (challenging)</li>
+                <li><strong>eenzaam</strong> (lonely)</li>
+                <li><strong>mistig</strong> (foggy)</li>
+                <li><strong>plakkerig</strong> (sticky)</li>
+                <li><strong>kletsnat / zeiknat</strong> (soaking wet / drenched)</li>
+                <li><strong>kil</strong> (cold - penetrating cold)</li>
+                <li><strong>zwaar op de maag</strong> (too heavy on the stomach)</li>
+                <li><strong>verkeerd</strong> (wrong - e.g., "smaak is niet verkeerd")</li>
+                <li><strong>naakt</strong> (naked)</li>
+                <li><strong>verontwaardigd</strong> (indignant/outraged)</li>
+                <li><strong>onzichtbaar</strong> (invisible)</li>
+                <li><strong>onzeker</strong> (insecure/uncertain)</li>
+                <li><strong>opvallend</strong> (striking / conspicuous)</li>
+                <li><strong>knap</strong> (handsome / beautiful)</li>
+                <li><strong>naïef</strong> (naive)</li>
+                <li><strong>bescheiden</strong> (modest)</li>
+                <li><strong>kleurrijk</strong> (colorful)</li>
+                <li><strong>onbegrepen</strong> (misunderstood)</li>
+                <li><strong>liefdevolle</strong> (loving)</li>
+                <li><strong>afstandelijk</strong> (distant / reserved)</li>
+                <li><strong>zonniger</strong> (sunnier)</li>
+            </ul>
 
-  <details>
-    <summary>🔍 Ontdekkingen & Problemen</summary>
-    <ul>
-      <li>Erachter komt – <span class="translation">To find out</span></li>
-      <li>Ontdekt – <span class="translation">Discovered</span></li>
-      <li>Weggegooid. – <span class="translation">Thrown away.</span></li>
-      <li>Tijdens een woedeaanval. – <span class="translation">During a fit of rage.</span></li>
-      <li>Je weet niet waarom. – <span class="translation">You don't know why.</span></li>
-      <li>Laatje – <span class="translation">Drawer</span></li>
-    </ul>
-  </details>
+            <h3 class="text-xl font-semibold subsection-title">1.4 Werkwoorden (Verbs)</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-sm rounded-lg">
+                    <thead>
+                        <tr>
+                            <th>Infinitief</th>
+                            <th>Tegenwoordige Tijd (TT)</th>
+                            <th>Verleden Tijd (VT) / Voltooid Deelwoord (VD)</th>
+                            <th>Vertaling (basis)</th>
+                            <th>Extra opmerkingen</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>herstellen</strong></td><td>Ik herstel</td><td>Ik herstelde / Ik ben hersteld</td><td>to recover</td><td><em>Het herstel duurde lang.</em></td></tr>
+                        <tr><td><strong>verdwalen</strong></td><td>Ik verdwaal</td><td>Ik verdwaalde / Ik ben verdwaald</td><td>to get lost</td><td><em>De kinderen zijn verdwaald.</em></td></tr>
+                        <tr><td><strong>omkomen</strong></td><td>Ik kom om</td><td>Ik kwam om / Ik ben omgekomen</td><td>to perish/die</td><td><em>Veel mensen zijn omgekomen.</em></td></tr>
+                        <tr><td><strong>waarschuwen</strong></td><td>Ik waarschuw</td><td>Ik waarschuwde / Ik heb gewaarschuwd</td><td>to warn</td><td><em>De expert waarschuwt.</em></td></tr>
+                        <tr><td><strong>voorbereiden</strong></td><td>Ik bereid voor</td><td>Ik bereidde voor / Ik heb voorbereid</td><td>to prepare</td><td><em>Voorbereiden OP.</em></td></tr>
+                        <tr><td><strong>doen</strong></td><td>Ik doe</td><td>Ik deed / Ik heb gedaan</td><td>to do</td><td><em>Soms doe ik.</em> / <em>De laatste stap, het betalen, doen we samen.</em> / <em>Samen ook het rijden doen.</em></td></tr>
+                        <tr><td><strong>aanvragen</strong></td><td>Ik vraag aan</td><td>Ik vroeg aan / Ik heb aangevraagd</td><td>to apply for</td><td><em>Visum aanvragen.</em> / <em>Het paspoort aangevraagd.</em></td></tr>
+                        <tr><td><strong>koken</strong></td><td>Ik kook</td><td>Ik kookte / Ik heb gekookt</td><td>to cook</td><td><em>We hebben elke dag thuis gekookt.</em></td></tr>
+                        <tr><td><strong>rijden</strong></td><td>Ik rijd</td><td>Ik reed / Ik heb gereden</td><td>to drive</td><td><em>Ik heb gereden.</em></td></tr>
+                        <tr><td><strong>verdelen</strong></td><td>Ik verdeel</td><td>Ik verdeelde / Ik heb verdeeld</td><td>to divide</td><td><em>Dan is het meer verdeeld.</em></td></tr>
+                        <tr><td><strong>uitleggen</strong></td><td>Ik leg uit</td><td>Ik legde uit / Ik heb uitgelegd</td><td>to explain</td><td><em>Hoe dat uit te leggen.</em></td></tr>
+                        <tr><td><strong>lukken</strong></td><td>Het lukt</td><td>Het lukte / Het is gelukt</td><td>to succeed/work out</td><td><em>Anders was dat niet gelukt.</em></td></tr>
+                        <tr><td><strong>spreken</strong></td><td>Ik spreek</td><td>Ik sprak / Ik heb gesproken</td><td>to speak</td><td><em>Mijn zus spreekt met haar dochter.</em></td></tr>
+                        <tr><td><strong>overstappen</strong></td><td>Ik stap over</td><td>Ik stapte over / Ik ben overgestapt</td><td>to switch/transfer</td><td><em>Na de tweede zin ben ik toch weer overgestapt.</em></td></tr>
+                        <tr><td><strong>bolderen</strong></td><td>Ik bolder</td><td>Ik bolderde / Ik heb gebolderd</td><td>to rumble / to boom</td><td></td></tr>
+                        <tr><td><strong>doorgaan</strong></td><td>Ik ga door</td><td>Ik ging door / Ik ben doorgegaan</td><td>to continue</td><td></td></tr>
+                        <tr><td><strong>helpen</strong></td><td>Ik help</td><td>Ik hielp / Ik heb geholpen</td><td>to help</td><td></td></tr>
+                        <tr><td><strong>vieren</strong></td><td>Ik vier</td><td>Ik vierde / Ik heb gevierd</td><td>to celebrate</td><td></td></tr>
+                        <tr><td><strong>bakken</strong></td><td>Ik bak</td><td>Ik bakte / Ik heb gebakken</td><td>to bake</td><td></td></tr>
+                        <tr><td><strong>maken</strong></td><td>Ik maak</td><td>Ik maakte / Ik heb gemaakt</td><td>to make</td><td></td></tr>
+                        <tr><td><strong>zakken</strong></td><td>Ik zak</td><td>Ik zakte / Ik ben gezakt</td><td>to fail (exam)</td><td></td></tr>
+                        <tr><td><strong>slagen</strong></td><td>Ik slaag</td><td>Ik slaagde / Ik ben geslaagd</td><td>to succeed (exam)</td><td></td></tr>
+                        <tr><td><strong>vasthouden</strong></td><td>Ik houd vast</td><td>Ik hield vast / Ik heb vastgehouden</td><td>to hold</td><td></td></tr>
+                        <tr><td><strong>raken</strong></td><td>De foto raakt me</td><td>De foto raakte me / De foto heeft me geraakt</td><td>to affect emotionally</td><td></td></tr>
+                        <tr><td><strong>aanraken</strong></td><td>Ik raak aan</td><td>Ik raakte aan / Ik heb aangeraakt</td><td>to touch physically</td><td></td></tr>
+                        <tr><td><strong>regelen</strong></td><td>Ik regel</td><td>Ik regelde / Ik heb geregeld</td><td>to arrange/fix</td><td></td></tr>
+                        <tr><td><strong>bezoeken</strong></td><td>Ik bezoek</td><td>Ik bezocht / Ik heb bezocht</td><td>to visit</td><td></td></tr>
+                        <tr><td><strong>bekijken</strong></td><td>Ik bekijk</td><td>Ik bekeek / Ik heb bekeken</td><td>to look at/view</td><td></td></tr>
+                        <tr><td><strong>moeten</strong></td><td>Ik moet</td><td>Ik moest</td><td>must/had to</td><td></td></tr>
+                        <tr><td><strong>vergeten</strong></td><td>Ik vergeet</td><td>Ik vergat / Ik ben vergeten</td><td>to forget</td><td></td></tr>
+                        <tr><td><strong>klussen</strong></td><td>Ik klus</td><td>Ik kluste / Ik heb geklust</td><td>to do repairs/DIY</td><td></td></tr>
+                        <tr><td><strong>ophangen</strong></td><td>Ik hang op</td><td>Ik hing op / Ik heb opgehangen</td><td>to hang up</td><td></td></tr>
+                        <tr><td><strong>opzoeken</strong></td><td>Ik zoek op</td><td>Ik zocht op / Ik heb opgezocht</td><td>to look up (information)</td><td></td></tr>
+                        <tr><td><strong>staren</strong></td><td>Ik staar</td><td>Ik staarde / Ik heb gestaard</td><td>to stare</td><td></td></tr>
+                        <tr><td><strong>in elkaar zetten</strong></td><td>Ik zet in elkaar</td><td>Ik zette in elkaar / Ik heb in elkaar gezet</td><td>to assemble</td><td></td></tr>
+                        <tr><td><strong>vastmaken</strong></td><td>Ik maak vast</td><td>Ik maakte vast / Ik heb vastgemaakt</td><td>to fasten</td><td></td></tr>
+                        <tr><td><strong>verwijzen</strong></td><td>Ik verwijs</td><td>Ik verwees / Ik heb verwezen</td><td>to refer</td><td></td></tr>
+                        <tr><td><strong>schelen</strong></td><td>Het scheelt</td><td>Het scheelde / Het heeft gescheeld</td><td>to save time/make a difference</td><td></td></tr>
+                        <tr><td><strong>vallen</strong></td><td>Ik val</td><td>Ik viel / Ik ben gevallen</td><td>to fall</td><td></td></tr>
+                        <tr><td><strong>wassen</strong></td><td>Ik was</td><td>Ik waste / Ik heb gewassen</td><td>to wash</td><td></td></tr>
+                        <tr><td><strong>vervelen</strong> (zich)</td><td>Ik verveel me</td><td>Ik verveelde me / Ik heb me verveeld</td><td>to be bored</td><td></td></tr>
+                        <tr><td><strong>bezeren</strong> (zich)</td><td>Ik bezeer me</td><td>Ik bezeerde me / Ik heb me bezeerd</td><td>to hurt oneself</td><td></td></tr>
+                        <tr><td><strong>schamen</strong> (zich)</td><td>Ik schaam me</td><td>Ik schaamde me / Ik heb me geschaamd</td><td>to be ashamed</td><td></td></tr>
+                        <tr><td><strong>voelen</strong></td><td>Ik voel me</td><td>Ik voelde me / Ik heb me gevoeld</td><td>to feel</td><td></td></tr>
+                        <tr><td><strong>studeren</strong></td><td>Ik studeer</td><td>Ik studeerde / Ik heb gestudeerd</td><td>to study</td><td></td></tr>
+                        <tr><td><strong>kijken</strong></td><td>Ik kijk</td><td>Ik keek / Ik heb gekeken</td><td>to watch</td><td></td></tr>
+                        <tr><td><strong>halen</strong></td><td>Ik haal</td><td>Ik haalde / Ik heb gehaald</td><td>to get</td><td></td></tr>
+                        <tr><td><strong>kuchen</strong></td><td>Ik kuch</td><td>Ik kuchte / Ik heb gekucht</td><td>to cough</td><td></td></tr>
+                        <tr><td><strong>overgeven</strong></td><td>Ik geef over</td><td>Ik gaf over / Ik heb overgegeven</td><td>to vomit</td><td></td></tr>
+                        <tr><td><strong>zweten</strong></td><td>Ik zweet</td><td>Ik zweette / Ik heb gezweet</td><td>to sweat</td><td></td></tr>
+                        <tr><td><strong>doorzetten</strong></td><td>Ik zet door</td><td>Ik zette door / Ik heb doorgezet</td><td>to persevere</td><td></td></tr>
+                        <tr><td><strong>kwijt raken</strong></td><td>Ik raak kwijt</td><td>Ik raakte kwijt / Ik ben kwijtgeraakt</td><td>to lose something</td><td></td></tr>
+                        <tr><td><strong>vinden</strong></td><td>Ik vind</td><td>Ik vond / Ik heb gevonden</td><td>to find</td><td></td></tr>
+                        <tr><td><strong>zonnebrand opdoen</strong></td><td>Ik doe zonnebrand op</td><td>Ik deed zonnebrand op / Ik heb zonnebrand opgedaan</td><td>to apply sunscreen</td><td></td></tr>
+                        <tr><td><strong>amuseren</strong> (zich)</td><td>Ik amuseer me</td><td>Ik amuseerde me / Ik heb me geamuseerd</td><td>to amuse oneself</td><td></td></tr>
+                        <tr><td><strong>ontspannen</strong></td><td>Ik ontspan</td><td>Ik ontspande / Ik heb ontspannen</td><td>to relax</td><td></td></tr>
+                        <tr><td><strong>vechten</strong></td><td>Ik vecht</td><td>Ik vocht / Ik heb gevochten</td><td>to fight</td><td></td></tr>
+                        <tr><td><strong>wisselen</strong></td><td>Ik wissel</td><td>Ik wisselde / Ik heb gewisseld</td><td>to exchange</td><td></td></tr>
+                        <tr><td><strong>aangeven</strong></td><td>Ik geef aan</td><td>Ik gaf aan / Ik heb aangegeven</td><td>to hand over/indicate</td><td></td></tr>
+                        <tr><td><strong>verhuizen</strong></td><td>Ik verhuis</td><td>Ik verhuisde / Ik ben verhuisd</td><td>to move house</td><td></td></tr>
+                        <tr><td><strong>kopen</strong></td><td>Ik koop</td><td>Ik kocht / Ik heb gekocht</td><td>to buy</td><td></td></tr>
+                        <tr><td><strong>regenen</strong></td><td>Het regent</td><td>Het regende / Het heeft geregend</td><td>to rain</td><td></td></tr>
+                        <tr><td><strong>miezeren</strong></td><td>Het miezert</td><td>Het miezerde / Het heeft gemiezerd</td><td>to drizzle</td><td></td></tr>
+                        <tr><td><strong>schommelen</strong></td><td>Het schommelt</td><td>Het schommelde / Het heeft geschommeld</td><td>to fluctuate/swing</td><td></td></tr>
+                        <tr><td><strong>klimmen</strong></td><td>Ik klim</td><td>Ik klom / Ik ben geklommen</td><td>to climb</td><td></td></tr>
+                        <tr><td><strong>proeven</strong></td><td>Ik proef</td><td>Ik proefde / Ik heb geproefd</td><td>to taste</td><td></td></tr>
+                        <tr><td><strong>voorgaan</strong></td><td>Ik ga voor</td><td>Ik ging voor / Ik ben voorgegaan</td><td>to go first/ahead</td><td></td></tr>
+                        <tr><td><strong>wachten</strong></td><td>Ik wacht</td><td>Ik wachtte / Ik heb gewacht</td><td>to wait</td><td></td></tr>
+                        <tr><td><strong>gaan staan</strong></td><td>Ik ga staan</td><td>Ik ging staan / Ik ben gaan staan</td><td>to stand up/take a stand</td><td></td></tr>
+                        <tr><td><strong>aanmaken</strong></td><td>Ik maak aan</td><td>Ik maakte aan / Ik heb aangemaakt</td><td>to create/make</td><td></td></tr>
+                        <tr><td><strong>afwisselen</strong></td><td>Ik wissel af</td><td>Ik wisselde af / Ik heb afgewisseld</td><td>to alternate/vary</td><td></td></tr>
+                        <tr><td><strong>overkomen</strong></td><td>Het overkomt me</td><td>Het overkwam me / Het is me overkomen</td><td>to happen/come across</td><td></td></tr>
+                        <tr><td><strong>leren</strong></td><td>Ik leer</td><td>Ik leerde / Ik heb geleerd</td><td>to learn</td><td></td></tr>
+                        <tr><td><strong>snurken</strong></td><td>Ik snurk</td><td>Ik snurkte / Ik heb gesnurkt</td><td>to snore</td><td></td></tr>
+                        <tr><td><strong>geven</strong></td><td>Ik geef</td><td>Ik gaf / Ik heb gegeven</td><td>to give</td><td></td></tr>
+                        <tr><td><strong>jeuken</strong></td><td>Het jeukt</td><td>Het jeukte / Het heeft gejeukt</td><td>to itch</td><td></td></tr>
+                        <tr><td><strong>afdwalen</strong></td><td>Ik dwaal af</td><td>Ik dwaalde af / Ik ben afgedwaald</td><td>to stray/wander off</td><td></td></tr>
+                        <tr><td><strong>verloren</strong></td><td>Ik verlies</td><td>Ik verloor / Ik heb verloren</td><td>to lose</td><td></td></tr>
+                        <tr><td><strong>verblijven</strong></td><td>Ik verblijf</td><td>Ik verbleef / Ik heb verbleven</td><td>to stay/reside</td><td></td></tr>
+                        <tr><td><strong>logeren</strong></td><td>Ik logeer</td><td>Ik logeerde / Ik heb gelogeerd</td><td>to lodge/stay as guest</td><td></td></tr>
+                        <tr><td><strong>duren</strong></td><td>Het duurt</td><td>Het duurde / Het heeft geduurd</td><td>to last</td><td></td></tr>
+                        <tr><td><strong>dronk</strong> (van drinken)</td><td>Ik drink</td><td>Ik dronk / Ik heb gedronken</td><td>drank</td><td></td></tr>
+                        <tr><td><strong>gedronken</strong> (van drinken)</td><td>n/a</td><td>n/a</td><td>drunk</td><td></td></tr>
+                        <tr><td><strong>settelen</strong></td><td>Ik settel</td><td>Ik settelde / Ik heb gesetteld</td><td>to settle</td><td></td></tr>
+                        <tr><td><strong>geweest</strong> (van zijn)</td><td>n/a</td><td>n/a</td><td>been</td><td></td></tr>
+                        <tr><td><strong>betekenen</strong></td><td>Ik beteken</td><td>Ik betekende / Ik heb betekend</td><td>to mean/signify</td><td><em>Kunnen jullie iets voor mij betekenen?</em></td></tr>
+                        <tr><td><strong>terugkrijgen</strong></td><td>Ik krijg terug</td><td>Ik kreeg terug / Ik heb teruggekregen</td><td>to get back</td><td><em>Kan ik mijn geld terugkrijgen?</em></td></tr>
+                        <tr><td><strong>ruilen</strong></td><td>Ik ruil</td><td>Ik ruilde / Ik heb geruild</td><td>to exchange</td><td><em>Kan ik misschien ruilen?</em></td></tr>
+                        <tr><td><strong>checken</strong></td><td>Ik check</td><td>Ik checkte / Ik heb gecheckt</td><td>to check</td><td><em>Ik zou het gecheckt moeten hebben.</em></td></tr>
+                        <tr><td><strong>passen</strong></td><td>Het past</td><td>Het paste / Het heeft gepast</td><td>to fit</td><td><em>De broeken passen helaas niet.</em></td></tr>
+                        <tr><td><strong>toepassen</strong></td><td>Ik pas toe</td><td>Ik paste toe / Ik heb toegepast</td><td>to apply/implement</td><td></td></tr>
+                        <tr><td><strong>aantrekken</strong></td><td>Ik trek aan</td><td>Ik trok aan / Ik heb aangetrokken</td><td>to put on (clothes)</td><td><em>Ik heb een broek aan geprobeerd.</em></td></tr>
+                        <tr><td><strong>ademen</strong></td><td>Ik adem</td><td>Ik ademde / Ik heb geademd</td><td>to breathe</td><td></td></tr>
+                        <tr><td><strong>niezen</strong></td><td>Ik nies</td><td>Ik nieste / Ik heb geniest</td><td>to sneeze</td><td></td></tr>
+                        <tr><td><strong>schilderen</strong></td><td>Ik schilder</td><td>Ik schilderde / Ik heb geschilderd</td><td>to paint</td><td></td></tr>
+                        <tr><td><strong>vermoorden</strong></td><td>Ik vermoord</td><td>Ik vermoordde / Ik heb vermoord</td><td>to murder</td><td></td></tr>
+                        <tr><td><strong>overlijden</strong></td><td>Ik overlijd</td><td>Ik overleed / Ik ben overleden</td><td>to pass away</td><td></td></tr>
+                        <tr><td><strong>sterven</strong></td><td>Ik sterf</td><td>Ik stierf / Ik ben gestorven</td><td>to die</td><td></td></tr>
+                        <tr><td><strong>weggooien</strong></td><td>Ik gooi weg</td><td>Ik gooide weg / Ik heb weggegooid</td><td>to throw away</td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-  <details>
-    <summary>🌤️ Overig</summary>
-    <ul>
-      <li>Zonniger – <span class="translation">Sunnier – niet 'meer zonnig'</span></li>
-      <li>Smaak verliezen. – <span class="translation">To lose taste.</span></li>
-    </ul>
-  </details>
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold section-title">2. Grammatica (Grammar)</h2>
+
+            <h3 class="text-xl font-semibold subsection-title">2.1 Lidwoorden (Articles) - Specifieke Opmerkingen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">HET visum</strong> (The visa - let op: HET lidwoord)</li>
+                <li><strong class="list-item-strong">HET vliegtuig</strong> (The airplane - let op: HET lidwoord)</li>
+                <li><strong class="list-item-strong">HET ding</strong> (The thing - let op: HET lidwoord)</li>
+                <li><strong class="list-item-strong">HET huis</strong> (The house - let op: HET lidwoord)</li>
+                <li><strong class="list-item-strong">HET weer</strong> (The weather - 'het' is altijd het lidwoord voor 'weer')</li>
+                <li><strong class="list-item-strong">HET huwelijk</strong> (The marriage - 'het' is altijd het lidwoord voor 'huwelijk')</li>
+                <li><strong class="list-item-strong">Grammatica Opmerking:</strong> <strong class="list-item-strong">Elk land</strong> (niet 'elke land') (Every country - let op: 'elk' bij 'land')</li>
+                <li><strong class="list-item-strong">Schotland heeft bijzondere natuur</strong> (Niet 'een bijzondere natuur' – 'natuur' is hier een algemeen, ontelbaar zelfstandig naamwoord)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.2 Voorzetsels (Prepositions)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Waarschuwen VOOR</strong> (To warn ABOUT)</li>
+                <li><strong class="list-item-strong">Voorbereiden OP</strong> (To prepare FOR)</li>
+                <li><strong class="list-item-strong">Tijdens de overstap</strong> (During the transfer/layover)</li>
+                <li><strong class="list-item-strong">Op het ticket</strong> (On the ticket)</li>
+                <li><strong class="list-item-strong">Dwars door.</strong> (Straight through.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.3 Bezittelijke Voornaamwoorden (Possessive Pronouns)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Mijn zus spreekt met haar dochter.</strong> (niet ‘zijn dochter’) (My sister speaks with her daughter - let op: bezittelijk voornaamwoord 'haar' bij vrouwelijk onderwerp)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.4 Algemene Zinsbouw (General Sentence Structure)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Soms DOE IK</strong> (Sometimes I DO)</li>
+                <li><strong class="list-item-strong">Dan is het meer verdeeld.</strong> (Then it's more divided.)</li>
+                <li><strong class="list-item-strong">Hij had HET niet nodig.</strong> (He didn't need IT.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.5 Hoeven vs. Moeten</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Hoeven:</strong> 'don't have to' (vaak in ontkennende zinnen)</li>
+                <li><strong class="list-item-strong">Moeten:</strong> 'must' / 'need to' (verplichting)</li>
+                <li>Voorbeeld: <strong class="list-item-strong">Ik hoef niet meer een visum aan te vragen; ik heb het niet meer nodig.</strong></li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.6 Wederkerende Voornaamwoorden (Zich)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li>Gebruik 'zich' (of 'me', 'je', 'ons', 'jullie') bij wederkerende werkwoorden.</li>
+                <li>Voorbeeld: <strong class="list-item-strong">Ik moet ME voorbereiden.</strong> (I need to prepare myself.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">2.7 Tijdsaanduidingen (Time Indications)</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Later.</strong> (Further / Later in time.)</li>
+                <li><strong class="list-item-strong">Vroeger.</strong> (In the old days / earlier in the past.)</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold section-title">3. Thematische Zinnen & Uitdrukkingen (Thematic Sentences & Expressions)</h2>
+
+            <h3 class="text-xl font-semibold subsection-title">3.1 Rampen & Gevolgen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Het herstel duurde lang na de overstroming.</strong> (The recovery took a long time after the flood.)</li>
+                <li><strong class="list-item-strong">De kinderen zijn verdwaald toen ze van de camping weggingen.</strong> (The children got lost when they left the campsite.)</li>
+                <li><strong class="list-item-strong">Veel mensen zijn omgekomen na de sterke regenbui.</strong> (Many people died after the heavy rain shower.)</li>
+                <li><strong class="list-item-strong">Dakloos zijn.</strong> (To be homeless.)</li>
+                <li><strong class="list-item-strong">Dakloos worden.</strong> (To become homeless.)</li>
+                <li><strong class="list-item-strong">Daklozen</strong> (Homeless people - noun)</li>
+                <li><strong class="list-item-strong">Tientallen kinderen zijn vermist.</strong> (Dozens of children are missing.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.2 Waarschuwingen & Voorbereidingen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">De expert waarschuwt voor stormachtig weer.</strong> (The expert warns about stormy weather.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.3 Vergelijkingen & Overeenkomsten</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Overeenkomstig / hetzelfde / gelijk</strong> (Similar / the same / equal)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.4 Acties & Processen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">De laatste stap, het betalen, doen we samen.</strong> (The last step, paying, we do together.)</li>
+                <li><strong class="list-item-strong">Visum aanvragen.</strong> (To apply for a visa.)</li>
+                <li><strong class="list-item-strong">Het paspoort aangevraagd.</strong> (Applied for the passport.)</li>
+                <li><strong class="list-item-strong">We hebben elke dag thuis gekookt.</strong> (We cooked at home every day.)</li>
+                <li><strong class="list-item-strong">Ik heb gereden.</strong> (I drove.)</li>
+                <li><strong class="list-item-strong">Samen ook het rijden doen.</strong> (Also do the driving together.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.5 Uniciteit & Uitzonderingen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Het enige probleem</strong> (The only problem)</li>
+                <li><strong class="list-item-strong">Ik ben de enige met een rijbewijs.</strong> (I am the only one with a driver's license.)</li>
+                <li><strong class="list-item-strong">Hij had HET niet nodig.</strong> (He didn't need IT.)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.6 Geografie & Landen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Argentinië</strong> (Argentina)</li>
+                <li><strong class="list-item-strong">Indonesië</strong> (Indonesia)</li>
+                <li><strong class="list-item-strong">Eilanden</strong> (Islands)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.7 Kwaliteit & Eigenschappen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">De beste worsten.</strong> (The best sausages.)</li>
+                <li><strong class="list-item-strong">Colombia heeft de slechtste keuken.</strong> (Colombia has the worst cuisine.)</li>
+                <li><strong class="list-item-strong">Niet overduidelijk?</strong> (Not obvious?)</li>
+                <li><strong class="list-item-strong">Strenger</strong> (More strict)</li>
+                <li><strong class="list-item-strong">Duur</strong> (Expensive)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.8 Overheid & Officiële Zaken</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">De Griekse overheid</strong> (The Greek government)</li>
+                <li><strong class="list-item-strong">De gegevens gevonden</strong> (Found the data / information)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.9 Reizen & Vervoer</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Op het ticket</strong> (On the ticket)</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold subsection-title">3.10 Diversen & Algemene Uitdrukkingen</h3>
+            <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                <li><strong class="list-item-strong">Gemini is een handig ding om te gebruiken.</strong> (Gemini is a handy thing to use.)</li>
+                <li><strong class="list-item-strong">Anders was dat niet gelukt.</strong> (Otherwise, that wouldn't have worked.)</li>
+                <li><strong class="list-item-strong">Hoe dat uit te leggen.</strong> (How to explain that.)</li>
+                <li><strong class="list-item-strong">Op zichzelf</strong> (By itself / in itself)</li>
+                <li><strong class="list-item-strong">Toen ik twee of drie was zou het makkelijk zijn geweest.</strong> (When I was two or three it would have been easy.)</li>
+                <li><strong class="list-item-strong">Mijn zus spreekt met haar dochter.</strong> (niet ‘zijn dochter’) (My sister speaks with her daughter - let op: bezittelijk voornaamwoord 'haar' bij vrouwelijk onderwerp)</li>
+                <li><strong class="list-item-strong">Het leger</strong> (The army)</li>
+                <li><strong class="list-item-strong">Explosieven, bommen, …</strong> (Explosives, bombs, ...)</li>
+                <li><strong class="list-item-strong">Na de tweede zin ben ik toch weer overgestapt.</strong> (After the second sentence, I switched back again.)</li>
+                <li><strong class="list-item-strong">Nog niet aan denken.</strong> (Don't think about it yet.)</li>
+            </ul>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold section-title">4. Chronologische Notities per Lesdag</h2>
+
+            <details>
+                <summary class="text-xl font-semibold subsection-title">Diensdag 15 Juli</summary>
+                <div>
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Winkelen & Kleding</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Afgelopen week.</strong></li>
+                        <li><strong class="list-item-strong">Ik heb de broek nog niet eens gedragen.</strong></li>
+                        <li><strong class="list-item-strong">Kunnen jullie iets voor mij betekenen?</strong> (Can you do something for me?)</li>
+                        <li><strong class="list-item-strong">Kan ik mijn geld terugkrijgen of misschien ruilen?</strong> (Can I get my money back or perhaps exchange it?)</li>
+                        <li><strong class="list-item-strong">Ik zou het gecheckt of gezien moeten hebben…</strong> (I should have checked/seen it...)</li>
+                        <li><strong class="list-item-strong">Zit er eentje tussen?</strong> (Is there one you like/Is there one that fits?)</li>
+                        <li><strong class="list-item-strong">De broeken passen helaas niet.</strong> (The pants unfortunately don't fit.)</li>
+                        <li><strong class="list-item-strong">Bij de middel zit het niet mooi.</strong> (It doesn't fit well at the waist.)</li>
+                        <li><strong class="list-item-strong">"Waar zijn de paskamers?"</strong> (Where are the changing rooms?)</li>
+                        <li><strong class="list-item-strong">Alstublieft. Deze graag.</strong> (Please. This one, please.)</li>
+                        <li><strong class="list-item-strong">Sorry, maar deze broek was in de korting. Is de korting al meegenomen?</strong> (Sorry, but these pants were on sale. Is the discount already included?)</li>
+                        <li><strong class="list-item-strong">Als ik van gedachte verander.</strong> (If I change my mind.)</li>
+                        <li><strong class="list-item-strong">Toepassen.</strong> (To apply, to implement.)</li>
+                        <li><strong class="list-item-strong">Ik heb een broek aan geprobeerd.</strong> (I tried on a pair of pants.)</li>
+                        <li><strong class="list-item-strong">Hij was goed bij mijn middel, maar bij mijn benen te smal. En de lengte was wel weer goed.</strong> (It was good at my waist, but too narrow at my legs. And the length was good.)</li>
+                        <li><strong class="list-item-strong">Je heupen.</strong> (Your hips.)</li>
+                        <li><strong class="list-item-strong">Mijn middel.</strong> (My waist.)</li>
+                        <li><strong class="list-item-strong">Je moet een maat groter.</strong> (You need a size larger.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Familie & Opvoeding</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Mijn ouders waren niet streng voor mij.</strong> (My parents weren't strict with me.)</li>
+                        <li><strong class="list-item-strong">Mijn ouders waren niet strenger voor mij dan voor…</strong> (My parents weren't stricter with me than for...)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Weer & Omgeving</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">De weerexperts.</strong> (The weather experts.)</li>
+                        <li><strong class="list-item-strong">Hevige regenbui.</strong> (Heavy downpour.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Gezondheid & Welzijn</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Ik moet ME voorbereiden.</strong> (I need to prepare myself.)</li>
+                        <li><strong class="list-item-strong">Mijn enige probleem is dat ik alles vergeet.</strong> (My only problem is that I forget everything.)</li>
+                        <li><strong class="list-item-strong">Ik hoef niet meer een visum aan te vragen; ik heb het niet meer nodig.</strong> (I don't need to apply for a visa anymore; I don't need it anymore.)</li>
+                        <li><strong class="list-item-strong">Focus: Hoeven versus moeten</strong> (don't have to vs. must/need to).</li>
+                        <li><strong class="list-item-strong">Ik heb een spoedgeval hier.</strong> (I have an emergency here.)</li>
+                        <li><strong class="list-item-strong">Hij ademt niet meer.</strong> (He's not breathing anymore.)</li>
+                        <li><strong class="list-item-strong">Ik heb NU hulp nodig. Ik woon….</strong> (I need help NOW. I live at...)</li>
+                        <li><strong class="list-item-strong">Ik kan niet naar jullie komen.</strong> (I can't come to you all.)</li>
+                        <li><strong class="list-item-strong">Ik kan niet naar het spreekuur komen.</strong> (I can't come to the consultation hour.)</li>
+                        <li><strong class="list-item-strong">Heeft u ook eerder plek?</strong> (Do you also have an earlier slot?)</li>
+                        <li><strong class="list-item-strong">Zou ik eerder kunnen misschien?</strong> (Could I perhaps come earlier?)</li>
+                        <li><strong class="list-item-strong">Later.</strong> (Further / Later in time.)</li>
+                        <li><strong class="list-item-strong">Vroeger.</strong> (In the old days / earlier in the past.)</li>
+                        <li><strong class="list-item-strong">Iemand niest. —> GEZONDHEID!</strong> (Someone sneezes. —> Bless you!)</li>
+                        <li><strong class="list-item-strong">Hopelijk word je snel beter.</strong> (Hopefully you get better soon.)</li>
+                        <li><strong class="list-item-strong">BETERSCHAP!</strong> (Get well soon!)</li>
+                        <li><strong class="list-item-strong">Hopelijk gaat de operatie goed.</strong> (Hopefully the operation goes well.)</li>
+                        <li><strong class="list-item-strong">Hopelijk heb je een snel herstel.</strong> (Hopefully you have a quick recovery.)</li>
+                        <li><strong class="list-item-strong">SUCCES!</strong> (Good luck!)</li>
+                        <li><strong class="list-item-strong">Mag je man meekomen?</strong> (Can your husband come along?)</li>
+                        <li><strong class="list-item-strong">Ga je veel bezoek krijgen?</strong> (Will you get many visitors?)</li>
+                        <li><strong class="list-item-strong">Heb je hulp nodig?</strong> (Do you need help?)</li>
+                        <li><strong class="list-item-strong">Sorry voor je verlies.</strong> (Sorry for your loss.)</li>
+                        <li><strong class="list-item-strong">GECONDOLEERD.</strong> (My condolences.)</li>
+                        <li><strong class="list-item-strong">Was het plotseling/onverwachts…?</strong> (Was it sudden/unexpected...?)</li>
+                        <li><strong class="list-item-strong">Heb je nog afscheid kunnen nemen?</strong> (Were you able to say goodbye?)</li>
+                        <li><strong class="list-item-strong">STERKTE!</strong> (Strength / Hang in there!)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Diverse</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Nog niet aan denken.</strong> (Don't think about it yet.)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary class="text-xl font-semibold subsection-title">Maandag 21 Juli</summary>
+                <div>
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Reiservaring & Gevoel</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Vermoeiend</strong> (Tiring)</li>
+                        <li><strong class="list-item-strong">Gereden</strong> (Driven - past participle of 'rijden')</li>
+                        <li><strong class="list-item-strong">Knus, klein dorpsevent</strong> (Cozy, small village event)</li>
+                        <li><strong class="list-item-strong">Nog best pittig</strong> (Rather challenging sometimes)</li>
+                        <li><strong class="list-item-strong">Moeilijk opstaan</strong> (Difficult to get up)</li>
+                        <li><strong class="list-item-strong">Eenzaam</strong> (Lonely)</li>
+                        <li><strong class="list-item-strong">De dingen die we later herinneren</strong> (The things we remember later)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Weer & Natuur</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Begon het te regenen</strong> (It started to rain)</li>
+                        <li><strong class="list-item-strong">Schotland heeft bijzondere natuur</strong> (Scotland has special/unique nature) <br> (Niet 'een bijzondere natuur' – 'natuur' is hier een algemeen, ontelbaar zelfstandig naamwoord)</li>
+                        <li><strong class="list-item-strong">Het was mistig.</strong> (It was foggy.)</li>
+                        <li><strong class="list-item-strong">Het weer.</strong> (The weather - 'het' is altijd het lidwoord voor 'weer')</li>
+                        <li><strong class="list-item-strong">Kleine mugjes / Muggen.</strong> (Small midges / Mosquitoes)</li>
+                        <li><strong class="list-item-strong">In de Schotse hooglanden.</strong> (In the Scottish Highlands.)</li>
+                        <li><strong class="list-item-strong">Muggenbulten.</strong> (Mosquito bites.)</li>
+                        <li><strong class="list-item-strong">Plakkerig.</strong> (Sticky.)</li>
+                        <li><strong class="list-item-strong">Het lag niet aan de camping.</strong> (It wasn't the camping's fault / It wasn't to be blamed on the camping.)</li>
+                        <li><strong class="list-item-strong">Het was gewoon het weer.</strong> (It was just the weather.)</li>
+                        <li><strong class="list-item-strong">Wandeling.</strong> (Walk/Hike.)</li>
+                        <li><strong class="list-item-strong">Rotsen.</strong> (Rocks.)</li>
+                        <li><strong class="list-item-strong">Gewacht, zelfs nog tijdens de regen. KLETSNAT / ZEIKNAT.</strong> (Waited, even during the rain. Soaking wet / Drenched.)</li>
+                        <li><strong class="list-item-strong">Het mocht niet baten.</strong> (It was no use / It didn't help.)</li>
+                        <li><strong class="list-item-strong">Het miezert / Miezerregen.</strong> (It's drizzling / Drizzle.)</li>
+                        <li><strong class="list-item-strong">Waterdichte schoenen.</strong> (Waterproof shoes.)</li>
+                        <li><strong class="list-item-strong">Dwars door.</strong> (Straight through.)</li>
+                        <li><strong class="list-item-strong">Kil</strong> (Cold - referring to a penetrating cold, often damp).</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Eten & Drinken</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Nog uit eten geweest?</strong> (Did you go out for dinner?)</li>
+                        <li><strong class="list-item-strong">Schapenorganen (Hart, lever en longen!!)</strong> (Sheep organs - Heart, liver and lungs!!)</li>
+                        <li><strong class="list-item-strong">Te zwaar op de maag.</strong> (Too heavy on the stomach.)</li>
+                        <li><strong class="list-item-strong">Schotse taarten.</strong> (Scottish pies.)</li>
+                        <li><strong class="list-item-strong">Vet.</strong> (Grease/Fat.)</li>
+                        <li><strong class="list-item-strong">Witte bonen in tomatensaus? Voor ontbijt?</strong> (White beans in tomato sauce? For breakfast?)</li>
+                        <li><strong class="list-item-strong">De smaak is niet verkeerd.</strong> (The taste isn't bad.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Verkeer & Wegen</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Aanbieding.</strong> (Offer/Deal.)</li>
+                        <li><strong class="list-item-strong">Een goede deal; en fijn voor de hooglanden.</strong> (A good deal; and good for the Highlands.)</li>
+                        <li><strong class="list-item-strong">Kleine landwegen?</strong> (Small country roads?)</li>
+                        <li><strong class="list-item-strong">Smalle wegen met veel vrachtwagens.</strong> (Narrow roads with many trucks.)</li>
+                        <li><strong class="list-item-strong">Dan waai je van de weg af.</strong> (Then you'll be blown off the road.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Personen & Gevoelens</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">In haar beroep, werkt Anouk/zij.</strong> (In her profession, Anouk/she works.)</li>
+                        <li><strong class="list-item-strong">Schildert.</strong> (Paints - present tense of 'schilderen'.)</li>
+                        <li><strong class="list-item-strong">Naakte mannen.</strong> (Naked men.)</li>
+                        <li><strong class="list-item-strong">Het huwelijk.</strong> (The marriage - 'het' is always the lidwoord for 'huwelijk'.)</li>
+                        <li><strong class="list-item-strong">Zij is verontwaardigd.</strong> (She is indignant/outraged.)</li>
+                        <li><strong class="list-item-strong">Niet goed begrepen.</strong> (Not well understood.)</li>
+                        <li><strong class="list-item-strong">Onzichtbaar.</strong> (Invisible.)</li>
+                        <li><strong class="list-item-strong">Onzeker.</strong> (Insecure/Uncertain.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Bezienswaardigheden</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Kastelen.</strong> (Castles.)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary class="text-xl font-semibold subsection-title">Donderdag 24 Juli</summary>
+                <div>
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Beschrijvingen van Uiterlijk & Karakter</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Opvallend</strong> (Striking / Conspicuous)</li>
+                        <li><strong class="list-item-strong">Dunner worden?</strong> (To become thinner?)</li>
+                        <li><strong class="list-item-strong">Afvalpillen</strong> (Diet pills)</li>
+                        <li><strong class="list-item-strong">Het beeld van de afvalpillen.</strong> (The image of the diet pills.)</li>
+                        <li><strong class="list-item-strong">Knap</strong> (Handsome / Beautiful)</li>
+                        <li><strong class="list-item-strong">Naïef</strong> (Naive)</li>
+                        <li><strong class="list-item-strong">Bescheiden</strong> (Modest)</li>
+                        <li><strong class="list-item-strong">Haar kleding is kleurrijk.</strong> (Her clothing is colorful.)</li>
+                        <li><strong class="list-item-strong">Ze vindt zichzelf.</strong> (She finds herself.)</li>
+                        <li><strong class="list-item-strong">Ze voelt zichzelf onbegrepen.</strong> (She feels misunderstood.)</li>
+                        <li><strong class="list-item-strong">Onzichtbaar</strong> (Invisible - uit eerdere lijst, past hier ook)</li>
+                        <li><strong class="list-item-strong">Onzeker</strong> (Insecure/Uncertain - uit eerdere lijst, past hier ook)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Relaties & Gevoelens</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">En haar man slaapt ook met anderen.</strong> (And her husband also sleeps with others.)</li>
+                        <li><strong class="list-item-strong">En toen was Cheryl...</strong> (And then Cheryl was...)</li>
+                        <li><strong class="list-item-strong">Ze voelt zich meestal eenzaam.</strong> (She usually feels lonely.)</li>
+                        <li><strong class="list-item-strong">Verlangen</strong> (To long for)</li>
+                        <li><strong class="list-item-strong">Liefdevolle relatie</strong> (Loving relationship)</li>
+                        <li><strong class="list-item-strong">Een partner die haar ziet staan.</strong> (A partner who appreciates her / sees her for who she is.)</li>
+                        <li><strong class="list-item-strong">Met een drang naar controle over haar leven.</strong> (With a strong urge for control over her life.)</li>
+                        <li><strong class="list-item-strong">Geen knuffels.</strong> (No hugs.)</li>
+                        <li><strong class="list-item-strong">Afstandelijk.</strong> (Distant / Reserved.)</li>
+                        <li><strong class="list-item-strong">Ze wil er graag bij horen (bij 'mensen' of bij haar vriendinnen).</strong> (She really wants to belong/fit in.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Dood & Verlies</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Weduwe</strong> (Widow)</li>
+                        <li><strong class="list-item-strong">Vermoord</strong> (Murdered)</li>
+                        <li><strong class="list-item-strong">Overleed / Stierf</strong> (Died - 'stierf' is the past tense of 'sterven')</li>
+                        <li><strong class="list-item-strong">Haar man overleed.</strong> (Her husband passed away.)</li>
+                        <li><strong class="list-item-strong">En ze liet geen traan.</strong> (And she shed no tear.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Dagelijks Leven & Gewoontes</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Vandaag ben ik naar de gym geweest.</strong> (Today I went to the gym.)</li>
+                        <li><strong class="list-item-strong">Als we nu nog twintig waren geweest, dan…</strong> (If we were still twenty, then...)</li>
+                        <li><strong class="list-item-strong">Met niemand gepraat.</strong> (Didn't talk to anyone.)</li>
+                        <li><strong class="list-item-strong">Nog niet aan denken.</strong> (Don't think about it yet.)</li>
+                        <li><strong class="list-item-strong">Voorbereiden</strong> (To prepare)</li>
+                        <li><strong class="list-item-strong">Ze bereidt het ontbijt voor haar familie tot in perfectie elke ochtend voor.</strong> (She prepares breakfast for her family to perfection every morning.)</li>
+                        <li><strong class="list-item-strong">Groot feest gegeven.</strong> (Gave a big party.)</li>
+                        <li><strong class="list-item-strong">Na de verhuizing.</strong> (After the move.)</li>
+                        <li><strong class="list-item-strong">Gegeven aan haar.</strong> (Given to her.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Producten & Winkels</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Wat is niet te koop in Nederlandse supermarkten?</strong> (What is not for sale in Dutch supermarkets?)</li>
+                        <li><strong class="list-item-strong">Arabische winkels.</strong> (Arab shops.)</li>
+                        <li><strong class="list-item-strong">Op het einde van de straat.</strong> (At the end of the street.)</li>
+                        <li><strong class="list-item-strong">Dezelfde producten.</strong> (The same products.)</li>
+                        <li><strong class="list-item-strong">Het eten is hetzelfde.</strong> (The food is the same.)</li>
+                        <li><strong class="list-item-strong">Gevulde paprika's, gevulde…</strong> (Stuffed bell peppers, stuffed...)</li>
+                        <li><strong class="list-item-strong">Zij koopt dure kleding om te compenseren.</strong> (She buys expensive clothes to compensate.)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Ontdekkingen & Problemen</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Erachter komt</strong> (To find out)</li>
+                        <li><strong class="list-item-strong">Ontdekt</strong> (Discovered)</li>
+                        <li><strong class="list-item-strong">Weggegooid.</strong> (Thrown away.)</li>
+                        <li><strong class="list-item-strong">Tijdens een woedeaanval.</strong> (During a fit of rage.)</li>
+                        <li><strong class="list-item-strong">Je weet niet waarom.</strong> (You don't know why.)</li>
+                        <li><strong class="list-item-strong">Laatje</strong> (Drawer)</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium text-blue-600 mb-2">Overig</h4>
+                    <ul class="list-disc list-inside ml-4 mb-4 text-gray-700">
+                        <li><strong class="list-item-strong">Zonniger</strong> (Sunnier - niet 'meer zonnig')</li>
+                        <li><strong class="list-item-strong">Smaak verliezen.</strong> (To lose taste.)</li>
+                        <li><strong class="list-item-strong">"Verder niets."</strong> (Nothing else/Furthermore nothing. - Niet 'anders niets').</li>
+                    </ul>
+                </div>
+            </details>
+        </section>
+
+    </main>
+
+    <footer class="bg-blue-100 text-gray-600 text-center py-4 mt-8">
+        <div class="container">
+            <p>&copy; 2024 Jouw Nederlandse Studiegids. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
